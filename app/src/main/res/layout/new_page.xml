@@ -23,11 +23,11 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Title"
         android:inputType="textAutoCorrect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="TitleOfMyPage" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -36,9 +36,22 @@
         android:layout_marginTop="75dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Body"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backHomeButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="10sp"
+        app:icon="@drawable/ic_baseline_home_purple"
+        app:iconPadding="4dp"
+        app:iconSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
