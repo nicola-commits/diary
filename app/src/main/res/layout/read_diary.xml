@@ -20,7 +20,6 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
-        android:textSize="10sp"
         app:icon="@drawable/ic_baseline_home_purple"
         app:iconPadding="4dp"
         app:iconSize="18dp"
@@ -38,15 +37,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/backHomeButtonRead"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/AllNotesTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

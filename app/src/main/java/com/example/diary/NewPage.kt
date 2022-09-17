@@ -22,7 +22,7 @@ class NewPage: AppCompatActivity() {
             val noteBody = findViewById<TextView>(R.id.editTextTextMultiLine).text
             val delimiter = getString(R.string.list_delimiter)
 
-            if(noteTitle == null || noteTitle == "" || noteTitle.contains(delimiter)) {
+            if(noteTitle == null || noteTitle == "" || noteTitle.contains(R.string.list_delimiter.toString())) {
 
                 Toast.makeText(this, "Invalid title! Title can't be empty or contain $delimiter!", Toast.LENGTH_LONG).show()
 
